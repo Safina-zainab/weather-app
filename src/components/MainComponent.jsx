@@ -3,8 +3,10 @@ import axios from 'axios';
 import SearchComponent from './SearchComponent';
 import WeatherDisplayComponent from './WeatherDisplayComponent';
 import FavoriteComponent from './FavoriteComponent';
+import { API_KEY } from '../../key';
 
-const API_KEY = '0f3dfcac350fa9058e9ad26e5c7e3148'; // Replace with your OpenWeatherMap API key
+// const API_KEY = process.env.REACT_APP_OPENWEATHERMAP_API_KEY; 
+
 
 const MainComponent = () => {
     const [currentWeather, setCurrentWeather] = useState(null);
