@@ -26,8 +26,18 @@ cd weather-insights-app
 2. Install dependencies:
 npm install
 
-3. Obtain an API key from [OpenWeatherMap](https://openweathermap.org/api) and replace `API_KEY` in `MainComponent.js` with your API key.
+3. Obtain OpenWeather API Key
 
+To use the weather functionality of our application, you'll need to obtain an API key from OpenWeather. Follow these steps:
+
+1. Sign up for a free OpenWeather account at [OpenWeather](https://home.openweathermap.org/users/sign_up).
+2. Log in to your OpenWeather account.
+3. Navigate to the "API keys" section in your account dashboard.
+4. Generate a new API key if you haven't already done so.
+5. Copy the API key to your clipboard.
+6. Keep your API key secure and do not expose it publicly (e.g., in your GitHub repositories).
+
+Once you have your API key, you can proceed to configure our application to use it for accessing weather data.
 4. Start the development server:
 npm start
 
