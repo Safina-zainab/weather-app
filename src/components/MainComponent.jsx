@@ -61,9 +61,9 @@ const MainComponent = () => {
         }
     };
 
-    const removeFavorite = async (city) => {
+    const removeFavorite = async (id) => {
         try {
-            await axios.delete(`http://localhost:3000/favorites/${city}`);
+            await axios.delete(`http://localhost:3000/favorites/${id}`);
             fetchFavorites();
         } catch (error) {
             console.error('Error removing favorite:', error);

@@ -6,9 +6,9 @@ const FavoriteComponent = ({ favorites, onRemove, onAdd, onCityClick }) => {
             <h3>Favorite Cities</h3>
             <ul className="favorite-list">
                 {favorites.map((city) => (
-                    <li key={city.name} className="favorite-item" onClick={() => onCityClick(city.name)}>
-                        {city.name}
-                        <button onClick={() => onRemove(city.name)}>Remove</button>
+                    <li key={city.id} className="favorite-item">
+                        <span onClick={() => onCityClick(city.name)}>{city.name}</span>
+                        <button onClick={() => onRemove(city.id)}>Remove</button>
                     </li>
                 ))}
             </ul>
